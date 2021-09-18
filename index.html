@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhetistik</title>
+    <!-- link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="innerLogoBlock">
+                <div class="logoBlock">
+                    <img src="icons/logo.svg" alt="Header logo">
+                </div>
+                <div class="logoTextBlock">
+                    <a class="logoLink" href="#">Zhetistik</a>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+                <input id="toggle" type="checkbox">
+                
+                <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+                
+                <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+                <label class="toggle-container" for="toggle">
+                <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+                <span class="button button-toggle"></span>
+                </label>
+                
+                <!-- Навигация -->
+                <nav class="nav">
+                    <a rel="nofollow" rel="noreferrer" class="nav-item" href="">О нас</a>
+                    <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Наши статьи</a>
+                    <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Наши проекты</a>
+                    <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Анонс банкета</a>
+                    <a rel="nofollow" rel="noreferrer" class="nav-item" href="">Контакты</a>
+                </nav>
+            </div>
+            <div class="menuBlock">
+                <ul class="menuBtnLi">
+                    <li class="menuBtnAbout"><a href="#">О нас</a></li>
+                    <li class="menuBtnArticles"><a href="#">Наши статьи</a></li>
+                    <li class="menuBtnProjects"><a href="#">Наши проекты</a></li>
+                    <li class="menuBtnBanquets"><a href="#">Анонс банкета</a></li>
+                    <li class="menuBtnContact"><a href="#">Контакты</a></li>
+                    <li class="menuBtnWhp"><a href="#"><img src="icons/WhatsApp.svg" alt="WhatsApp icon"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="section-1" class="mainWrapper">
+        <div class="innerMainBlock">
+            <h1 class="mainInnerTitle">Фонд развития и поддержки предпринимательства</h1>
+            <p class="mainInnerText">Теперь каждый из нас может максимально применить свои знания, используя при этом все различные компьютерные технологии.</p>
+            <button class="aboutBtn">О нас</button>
+        </div>
+    </section>
+    <section id="section-2" class="missionBlock">
+        <div class="missionInnerBlock">
+            <div class="misVisBlock">
+                <div class="missionAside">
+                    <div class="boxLineBlock">
+                        <img src="icons/Vector (7).svg" alt="">
+                    </div>
+                    <div class="asideText">
+                        <p  class="asideTitle missionTitle"> Миссия</p>
+                        <p  class="asideContentText">Если о наших героях будет известно, как можно большему проценту населения, то это не только приведет <span>к их узнаваемости, 
+                        но и повысит процент стремления к успешности среди молодого поколения.</span></p>
+                    </div>
+                </div>
+                <div class="visionAside">
+                    <div class="boxLineBlock">
+                        <img src="icons/Component 5.svg" alt="">
+                    </div>
+                    <div class="asideText">
+                        <p  class="asideTitle visionTitle">Видение</p>
+                        <p  class="asideContentText">Нашей молодежи будет легче ставить новые цели и добиваться <span>успехов, несмотря на все трудности, которые могут встретиться на пути. 
+                        Можно легко следовать примеру, ориентируясь на ярких представителей современности.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="goalAside">
+                    <div class="goalBoxLineBlock">
+                    <div class="goalBoxLineBorder">
+                        <img src="icons/Vector (8).svg" alt="">
+                    </div>
+                </div>
+                <div class="goalAsideText">
+                    <p  class="asideTitle goalTitle">Цель</p>
+                    <p  class="asideContentText goalContentText">В связи с колоссальным развитием современных технологий добивать вершин стало намного проще.
+                        <span>Теперь каждый из нас может максимально применить свои знания, используя при этом все различные компьютерные технологии.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-3" class="aboutMainBlock">
+        <div class="innerAboutBlock">
+            <div class="aboutBlock">
+                <div class="aboutContent">
+                    <p class="aboutTitle">О нас</p>
+                    <p class="aboutText">Нашей молодежи будет легче ставить новые цели и добиваться успехов, несмотря на все трудности, которые 
+                        могут встретиться на пути. Можно легко следовать примеру, ориентируясь на ярких представителей современности.</p>
+                    <button class="moreAboutBtn">Узнать больше</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-4" class="projectMainBlock">
+        <div class="projectTitleBlock">
+            <p class="projectMainTitle">Наши проекты</p>
+        </div>
+        <div class="innerProjectBlock">
+            <div class="sliderBlock">
+                <button class="leftArrow"></button>
+                <div class="firstSlide first">
+                    <div class="ProjectBlock">
+                        <p class="succesTitle">Стремление к успешности</p>
+                        <p class="projectTitle">Фонда развития и поддержки</p>
+                    </div>
+                    <button class="projectBtn">О проекте</button>
+                </div>
+                <div class="secondSlide second">
+                    <div class="ProjectBlock">
+                        <p class="succesTitle seconSuccesTitle">Стремление к успешности</p>
+                        <p class="projectTitle seconProjectTitle">Компьютерные технологии</p>
+                    </div>
+                    <button class="projectBtn secondProjectBtn">О проекте</button>
+                </div>
+                <div class="thirdSlide third">
+                    <div class="ProjectBlock">
+                        <p class="succesTitle">Стремление к успешности</p>
+                        <p class="projectTitle">Предстовителей современности</p>
+                    </div>
+                    <button class="projectBtn">О проекте</button>
+                </div>
+                <div class="fourSlide four">
+                    <div class="ProjectBlock">
+                        <p class="succesTitle">Стремление к успешности</p>
+                        <p class="projectTitle">Вклад в развитие страны</p>
+                    </div>
+                    <button class="projectBtn">О проекте</button>
+                </div>
+                <div class="rightArrow"></div>
+            </div>
+        </div>
+    </section>
+    <section id="section-5" class="articlesBlock">
+        <div class="articlesTitleBlock">
+            <p class="articleMainTitle">Наши статьи</p>
+        </div>
+        <div class="articleKit">
+            <div class="article firstArticle">
+                <img src="picture/article1.png" alt="">
+                <div class="firstArticleContent">
+                    <p class="articleTitle">Особый интерес составляют те организации</p>
+                    <p class="articleText">Если о наших героях будет известно, как можно большему проценту населения, то это не только приведет 
+                        к их узнаваемости, но и повысит процент стремления к успешности среди молодого поколения.</p>
+                </div>
+            </div>
+            <div class="article secondArticle">
+                <img src="picture/article2.png" alt="">
+                <div class="secondArticleContent">
+                    <p class="articleTitle">В связи с колоссальным развитием современных технологий</p>
+                    <p class="articleText">Фонд развития и поддержки предпринимательства, является некоммерческой организацией, главная цель которого 
+                        предоставлять достоверную информацию о предпринимателях.</p>
+                </div>
+            </div>
+            <div class="article thirdArticle">
+                <img src="picture/article3.png" alt="">
+                <div class="thirdArticleContent">
+                    <p class="articleTitle">Если о наших героях будет известно, как можно большему проценту </p>
+                    <p class="articleText">Нашей молодежи будет легче ставить новые цели и добиваться успехов, несмотря на все трудности, 
+                        которые могут встретиться на пути. Можно легко следовать примеру, ориентируясь на ярких представителей современности.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-7" class="banquetMainBlock">
+        <div class="banquetInnerBlock">
+            <div class="banquetBlock">
+                <div class="banquetContentBlock">
+                    <p class="banquetTitle">Банкет</p>
+                    <p class="banquetText">Нашей молодежи будет легче ставить новые цели и добиваться успехов, несмотря на все трудности, которые 
+                            могут встретиться на пути. Можно легко следовать примеру, ориентируясь на ярких представителей современности.</p>
+                    <button class="moreAboutBtn">Узнать больше</button>
+                </div>
+            </div>
+            <div class="ribbon">
+                <p>25/12</p>
+                <p>2021</p>
+            </div>
+        </div>
+    </section>
+    <section id="section-8" class="contactMainBlock">
+        <div class="contactInnerBlock">
+            <div class="contactBlock">
+                <div class="contactTitleBlock">
+                    <p class="contactMainTitle">Связаться с нами</p>
+                </div>
+                <div class="contactContentBlock">
+                    <div class="contactUsBlock">
+                        <div class="ourContactsBlock">
+                            <p class="contactTitle">Контакты</p>
+                            <ul class="contactLink">
+                                <li class="contact_list map_icon"><a href="#"><img src="icons/mapicon.svg" alt=""></a>Казахстан, г. Нур-Султан, Z05T8F6, пр. Мəңгілік Ел, 57А</li>
+                                <li class="contact_list email_icon"><a href="#"><img src="icons/emailicon.svg" alt=""></a>office@nicnbk.kz</li>
+                                <li class="contact_list phone_icon"><a href="#"><img src="icons/phoneicon.svg" alt=""></a>+ 7 (7172) 55 71 00</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="applicationMainBlock">
+                        <div class="contactFormBlock">
+                            <form action="">
+                                <input type="text" placeholder="Ваше имя">
+                                <input type="text" placeholder="Email">
+                                <input type="text" placeholder="Сообщение">
+                                <input type="submit" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer_block">
+        <div class="footerContainer">
+            <div class="innerLogoBlock">
+                <div class="logoBlock">
+                    <img src="icons/logo_white.svg" alt="Footer logo">
+                </div>
+                <div class="logoTextBlock">
+                    <a class="logoLink" href="#">Zhetistik</a>
+                </div>
+            </div>
+            <div class="menuBlock">
+                <ul class="menuBtnLi">
+                    <li class="menuBtnAbout"><a href="#">О нас</a></li>
+                    <li class="menuBtnArticles"><a href="#">Наши статьи</a></li>
+                    <li class="menuBtnProjects"><a href="#">Наши проекты</a></li>
+                    <li class="menuBtnBanquets"><a href="#">Анонс банкета</a></li>
+                    <li class="menuBtnContact"><a href="#">Контакты</a></li>
+                    <li class="menuBtnWhp"><a href="#"><img src="icons/WhatsApp.svg" alt="WhatsApp icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

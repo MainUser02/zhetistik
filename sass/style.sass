@@ -1,0 +1,553 @@
+// Fonts ===============
+
+@font-face
+    font-family: 'PlayfairDisplay'
+    src: url('../fonts/PlayfairDisplay-Regular.eot')
+    src: local('☺'), url('../fonts/PlayfairDisplay-Regular.woff') format('woff'), url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'), url('../fonts/PlayfairDisplay-Regular.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'OpenSans'
+    src: url('../fonts/OpenSans-Regular.eot')
+    src: local('☺'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'OpenSansBold'
+    src: url('../fonts/OpenSans-Bold.eot')
+    src: local('☺'), url('../fonts/OpenSans-Bold.woff') format('woff'), url('../fonts/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans-Bold.svg') format('svg')
+    font-weight: normal
+    font-style: bold
+
+// End fonts ==============
+
+// Mixins ================
+
+@mixin font($font-size, $line-height, $font-family)
+    font-size: $font-size
+    line-height: $line-height
+    font-family: $font-family
+    font-weight: normal
+    font-style: normal
+
+@mixin boxLine($width, $height, $border)
+    width: $width
+    height: $height
+    border: $border
+
+@mixin flex-center($width, $min-height, $height, $background, $display, $justify-content, $align-items)
+    width: $width
+    min-height: $min-height
+    height: $height
+    background: $background
+    display: $display
+    justify-content: $justify-content
+    align-items: $align-items
+
+@mixin btn($width, $height, $display, $justify-content, $align-items)
+    border: none
+    background: #EAA955
+    border-radius: 6px
+    width: $width
+    height: $height
+    display: $display
+    justify-content: $justify-content
+    align-items: $align-items
+
+@mixin arrow($width, $height)
+    border: none
+    background: none
+    width: $width
+    height: $height
+
+// End mixin =============================
+
+body
+    padding: 0
+    margin: 0 auto
+
+*
+    margin: 0
+
+// Header start ==================
+
+header
+    @include flex-center(100%, auto, auto, #fff, flex, center, center)
+
+nav
+    @include flex-center(65%, 97px, auto, none, flex, space-between, center)
+
+.innerLogoBlock
+    @include flex-center(14.6%, auto, auto, none, flex, space-evenly, center)
+    padding-top: 11px
+    flex-direction: row
+
+.logoBlock
+    @include flex-center(64px, auto, 56px, none, flex, center, center)
+
+.logoTextBlock
+    @include flex-center(auto, auto, auto, none, flex, center, center)
+
+.logoLink
+    @include font(20px, 27px, 'PlayFairDisplay')
+    text-decoration: none
+    color: #000
+
+.menuBlock
+    @include flex-center(60%, auto, 30px, none, flex, center, center)
+
+.menuBtnLi
+    @include flex-center(100%, auto, 20px, none, flex, space-around, flex-start)
+    list-style-type: none
+    li
+        a
+            @include font(17px, 23px, 'OpenSans')
+            color: #000
+            text-decoration: none
+
+// Header End ========================
+
+// Main block Start ====================
+
+.mainWrapper
+    @include flex-center(100%, 693px, auto, none, flex, center, center)
+    background-image: linear-gradient(to right, rgba(55, 37, 169, 0.4), rgba(55, 37, 169, 0.4) 40%), url(../picture/main.png)
+    background-position: center
+    background-repeat: no-repeat
+
+.innerMainBlock
+    @include flex-center(63.4%, 290px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+
+.mainInnerTitle
+    @include font(46.08px, 63px, 'OpenSansBold')
+    color: #fff
+
+.mainInnerText
+    @include font(18px, 25px, 'OpenSans')
+    color: #fff
+    width: 712px
+    padding-bottom: 2px
+
+.aboutBtn
+    @include btn(154px, 50px, flex, center, center)
+    @include font(20px, 27.24px, 'OpenSans')
+    color: #fff
+
+// Main block End =======================
+
+// Mission block Start ======================
+
+.missionBlock
+    @include flex-center(100%, 960px, auto, #fff, flex, center, center)
+
+.missionInnerBlock
+    @include flex-center(63.5%, 760px, auto, none, flex, center, flex-end)
+    background-image: url(../picture/missionbg.png)
+    background-color: #fff
+    background-position: top-left
+    background-repeat: no-repeat
+    flex-direction: column
+
+.misVisBlock
+    @include flex-center(52%, 530px, auto, none, flex, space-evenly, center)
+    flex-direction: column
+
+.missionAside
+    @include flex-center(100%, 205px, auto, none, flex, space-between, flex-start)
+
+.visionAside
+    @include flex-center(100%, 205px, auto, none, flex, space-between, flex-start)
+
+.goalAside
+    @include flex-center(991px, 230px, auto, #5738B1, flex, space-evenly, center)
+
+.boxLineBlock
+    @include flex-center(90px, 90px, auto, none, flex, center, center)
+    @include boxLine(90px, 90px, 1.5px solid #5738B1)
+
+.goalBoxLineBlock
+    @include flex-center(10%, 230px, auto, none, flex, center, center)
+
+.goalBoxLineBorder
+    @include flex-center(90px, 90px, auto, none, flex, center, center)
+    @include boxLine(90px, 90px, 1.5px solid #fff)
+    margin-bottom: 30px
+
+.asideText
+    @include flex-center(79%, 170px, auto, none, Flex, space-between, flex-start)
+    flex-direction: column
+    padding-right: 18px
+
+.goalAsideText
+    @include flex-center(71.5%, 124px, auto, none, Flex, space-between, flex-start)
+    flex-direction: column
+
+.asideTitle
+    @include font(20px, 27px, 'PlayFairDislay')
+    color: #000
+    margin: 0
+
+.asideContentText
+    @include font(16px, 29px, 'OpenSans')
+
+.goalTitle, .goalContentText
+    color: #fff
+
+// Mission block End ========================
+
+// About us Start =======================
+
+.aboutMainBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+
+.aboutBlock
+    @include flex-center(100%, auto, uto, none, flex, center, center)
+
+.innerAboutBlock
+    @include flex-center(100%, auto, auto, none, flex, flex-end, center)
+    background-image: url(../picture/about.png)
+    background-color: #fff
+    background-position: center
+    background-repeat: no-repeat
+
+.aboutBlock
+    @include flex-center(52.45%, 698px, auto, #FFFFFFCC, flex, center, center)
+
+.aboutContent
+    @include flex-center(84.5%, 291px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+
+.aboutTitle
+    @include font(40px, 53px, 'PlayFairDisplay')
+    margin: 0
+
+.aboutText
+    @include font(16px, 29px, 'OpenSans')
+    margin: 0
+    width: 580px
+
+.moreAboutBtn
+    @include btn(221px, 50px, flex, center, center)
+    @include font(20px, 27px, 'OpenSans')
+    color: #fff
+// About block End =================================
+
+// Project block Start ========================
+
+.projectMainBlock
+    @include flex-center(100%, 895px, auto, none, flex, none, center)
+    flex-direction: column
+
+.projectTitleBlock
+    @include flex-center(100%, 53px, auto, none, flex, center, flex-end)
+    padding-top: 99px
+
+.innerProjectBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+    padding-top: 31px
+
+.projectMainTitle
+    @include font(40px, 53px, 'PlayFairDisplay')
+
+.sliderBlock
+    @include flex-center(65.26%, 650px, auto, none, flex, center, center)
+
+.leftArrow
+    @include arrow(15px, 15px)
+    background-image: url(../icons/arrowLeft.svg)
+    background-repeat: no-repeat
+    background-position: center
+    padding: 0
+    margin-right: 18px
+    display: flex
+
+.rightArrow
+    @include arrow(15px, 15px)
+    background-image: url(../icons/arrowRight.svg)
+    background-repeat: no-repeat
+    background-position: center
+    padding: 0
+    margin-left: 18px
+    display: flex
+
+.firstSlide, .secondSlide, .thirdSlide, .fourSlide
+    @include flex-center(23.5%, 570px, auto, none, flex, space-around, center)
+    flex-direction: column
+
+.first
+    background-image: url(../picture/up.png)
+    background-position: center
+    background-repeat: no-repeat
+
+.second
+    background-image: url(../picture/it.png)
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 650px
+    width: 24%
+
+.third
+    background-image: url(../picture/next.png)
+    background-position: center
+    background-repeat: no-repeat
+
+.four
+    background-image: url(../picture/country.png)
+    background-position: center
+    background-repeat: no-repeat
+
+.ProjectBlock
+    @include flex-center(84%, 255px, auto, none, flex, none, flex-start)
+    flex-direction: column
+
+.succesTitle
+    @include font(16px, 22px, 'OpenSans')
+    color: #fff
+    margin: 0
+    padding-top: 46px
+
+.seconSuccesTitle
+    @include font(16px, 22px, 'OpenSans')
+    color: #fff
+    margin: 0
+    padding-top: 52px
+
+.projectTitle
+    @include font(30px, 40px, 'PlayFairDisplay')
+    color: #fff
+    padding-top: 18px
+
+.seconProjectTitle
+    @include font(30px, 40px, 'PlayFairDisplay')
+    color: #fff
+    padding-top: 20px
+
+.projectBtn
+    @include btn(246.64px, 50px, flex, center, center)
+    @include font(20px, 27px, 'OpenSans')
+    color: #fff
+
+.secondProjectBtn
+    @include btn(253.52px, 57.02px, flex, center, center)
+    @include font(20px, 27px, 'OpenSans')
+    color: #fff
+    margin-top: 34px
+
+// Project block End ============================
+
+// Articles block Start =========================
+
+.articlesBlock
+    @include flex-center(100%, 810px, auto, none, flex, flex-start, center)
+    flex-direction: column
+
+.articlesTitleBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+    padding-top: 39px
+
+.articleMainTitle
+    @include font(40px, 53px, 'PlayFairDisplay')
+    padding-right: 32px
+
+.articleKit
+    @include flex-center(65.26%, auto, auto, none, flex, space-around, flex-start)
+    padding-top: 58px
+
+.article
+    @include flex-center(386px, 589px, auto, none, flex, space-around, center)
+    flex-direction: column
+
+.firstArticleContent, .secondArticleContent, .thirdArticleContent
+    @include flex-center(100%, 224px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+    padding-top: 27px
+
+.articleTitle
+    @include font(20px, 27px, 'PlayFairDisplay')
+
+.articleText
+    @include font(16px, 29px, 'OpenSans')
+
+// Aticle block End ==================================
+
+// Banquet block Start ================================
+
+.banquetMainBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+    padding-top: 30px
+
+.banquetInnerBlock
+    @include flex-center(100%, 648px, auto, none, flex, flex-start, center)
+    background-image: url(../picture/banquet.png)
+    background-position: center
+    background-repeat: no-repeat
+
+.banquetBlock
+    @include flex-center(52.44%, 648px, auto, rgba(255, 255, 255, 0.8), flex, flex-end, center)
+
+.banquetContentBlock
+    @include flex-center(63.2%, 297px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+
+.banquetTitle
+    @include font(40px, 53px, 'PlayFairDisplay')
+    padding-top: 7px
+
+.banquetText
+    @include font(16px, 29px, 'OpenSans')
+    width: 580px
+    padding-top: 3px
+
+// RIBBON =============================
+.ribbon
+    background-color: #EAA955
+    position: relative
+    // left: 49.3%
+    // top: 433%
+    right: 3.2%
+    bottom: 260px
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 70%, 0 100%)
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%)
+    @include flex-center(122px, auto, 129px, #EAA955, flex, flex-start, center)
+    flex-direction: column
+
+.ribbon
+    p:nth-child(1)
+        @include font(46.05px, 55px, 'PlayFairDisplay')
+        margin: 0
+        padding-top: 9px
+    p:nth-child(2)
+        @include font(26.51px, 35px, 'PlayFairDisplay')
+        margin: 0
+
+// RIBBON END ================
+
+// Banquet Block End ====================
+
+// Contact block Start =====================
+
+.contactMainBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+    padding-top: 108px
+    margin-bottom: 99px
+
+.contactInnerBlock
+    @include flex-center(65.26%, auto, auto, none, flex, center, center)
+
+.contactBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+    flex-direction: column
+
+.contactTitleBlock
+    @include flex-center(100%, auto, auto, none, flex, center, center)
+
+.contactContentBlock
+    @include flex-center(100%, auto, auto, none, flex, space-between, center)
+    flex-direction: row
+    padding-top: 58px
+
+.contactMainTitle
+    @include font(40px, 53px, 'PlayFairDisplay')
+
+.contactUsBlock
+    @include flex-center(43.74%, 430px, auto, #282D71, flex, center, center)
+    background-image: url(../picture/contact.png)
+    background-position: center
+    background-repeat: no-repeat
+    margin-left: 14px
+
+.ourContactsBlock
+    @include flex-center(61%, 237px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+
+.contactTitle
+    @include font(40px, 53px, 'PlayFairDisplay')
+    color: #fff
+
+.contactLink
+    @include flex-center(310px, 152px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+    padding: 0
+
+.contact_list
+    @include font(16px, 22px, 'OpenSans')
+    color: #fff
+    list-style-type: none
+    a
+        margin-right: 10px
+
+.applicationMainBlock
+    @include flex-center(47.45%, auto, auto, none, flex, center, center)
+    margin-right: 17px
+    padding-top: 11.5px
+
+.contactFormBlock
+    @include flex-center(100%, 420px, auto, none, flex, space-between, center)
+
+form
+    @include flex-center(100%, 420px, auto, none, flex, space-between, flex-start)
+    flex-direction: column
+
+input[type="text"]
+    border: 1px solid #D9DEE3
+    border-radius: 6px
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    -khtml-border-radius: 6px
+    background: #ffffff !important
+    outline: none
+    height: 60px
+    width: 570px
+    padding-left: 24px
+    color: #686868
+    font-size: 16px
+    font-family: 'OpenSans'
+
+input[type="text"]:nth-child(3)
+    border: 1px solid #D9DEE3
+    border-radius: 6px
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    -khtml-border-radius: 6px
+    background: #ffffff !important
+    outline: none
+    height: 60px
+    width: 570px
+    padding-left: 24px
+    padding-bottom: 100px
+    color: #686868
+    font-size: 16px
+    font-family: 'OpenSans'
+
+input[type="submit"]
+    @include btn(221px, 60px, flex, center, center)
+    @include font(20px, 27px, 'OpenSans')
+    color: #fff
+
+// Contact Block End ==========================
+
+// Footer Start ===========================
+
+.footer_block
+    @include flex-center(100%, 241px, auto, #05254C, flex, center, center)
+
+.footerContainer
+    @include flex-center(65.26%, 241px, auto, none, flex, space-between, center)
+
+.footerContainer
+    .innerLogoBlock
+        .logoTextBlock
+            a
+                color: #fff
+    .menuBlock
+        .menuBtnLi
+            li
+                a
+                    color: #fff
+
+// Footer End ====================================
+
+// Burger Start =======================================
